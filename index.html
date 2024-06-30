@@ -132,46 +132,21 @@
   </div>
 </section>
 <!-- End paper abstract -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="content has-text-justified">
+      <p style="text-align:center;">
+        <img src="static/images/overview2-1.png" alt="MY ALT TEXT" width="50%" height="50%"/>
+      </p>
+      <p>
+        Our work introduces the Diffusion-Wavelet (DiWa) approach, a novel method that addresses the challenges faced by traditional Super-Resolution (SR) techniques. 
+        Traditional regression-based methods, like standard convolutional neural networks, often struggle with producing high-frequency details needed for high magnification ratios. 
+        Generative models in general, and more specifically, diffusion models, have shown better performance in these areas but still fall short in terms of computational efficiency and capturing finer details.
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/diwa_webpage_1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          A comparison of LR, HR, SR3, and DiWa images illustrates the quality of our proposed method DiWa for upscaling images from 16x16 to 128x128.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+        DiWa leverages the frequency domain (via discrete wavelet transform) within the diffusion pipeline to enhance image quality and speed up the iterative generation process. 
+        By operating in the frequency domain rather than the pixel space, DiWa is able to better capture and preserve essential high-frequency features. 
+        This approach not only improves image quality but also reduces the computational load, making diffusion models for image SR more accessible.
+</p>
 
 
 <!--BibTex citation -->
